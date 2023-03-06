@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to use Git LFS to upload a large file to GitHub</title>
+  </head>
+  <body>
+    <h1>How to use Git LFS to upload a large file to GitHub</h1>
+    <p>To use Git LFS to upload large files to GitHub, follow these steps:</p>
+    <ol>
+      <li>Install Git LFS: If Git LFS is not already installed on your system, you need to install it first. You can download and install Git LFS from the official website at https://git-lfs.github.com/.</li>
+      <li>Initialize Git LFS: After installing Git LFS, navigate to your Git repository directory and run the following command to initialize Git LFS for your repository:</li>
+      <pre><code>git lfs install</code></pre>
+      <li>Track large files: Next, you need to specify which files you want to track using Git LFS. You can do this by running the following command:</li>
+      <pre><code>git lfs track "&lt;pattern&gt;"</code></pre>
+      <li>Add and commit your files: After tracking the files, add them to your Git repository using the regular <code>git add</code> command, and commit them using the regular <code>git commit</code> command.</li>
+      <pre><code>git add &lt;filename&gt;
+git commit -m "Add large file"</code></pre>
+      <li>Push to GitHub: Finally, push your changes to GitHub using the regular <code>git push</code> command.</li>
+      <pre><code>git push</code></pre>
+    </ol>
+    <p>Git LFS will automatically replace the large files with pointer files that point to the actual file stored on the Git LFS server.</p>
+  </body>
+</html>
